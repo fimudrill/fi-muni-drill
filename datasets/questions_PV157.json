@@ -4691,5 +4691,55 @@
         "right": true
       }
     ]
+  },
+  {
+    "name": "Modifikaci přenášené zprávy lze detekovat:",
+    "answers": [
+      {
+        "body": "využitím funkcí MAC/HMAC",
+        "right": true
+      },
+      {
+        "body": "při každém neúspěšně ukončeném běhu zero-knowledge protokolu",
+        "right": false
+      },
+      {
+        "body": "ověřením integrity privátního klíče",
+        "right": false
+      },
+      {
+        "body": "využitím digitálního podpisu",
+        "right": true
+      }
+    ]
+  },
+  {
+    "name": "Pro *-vlastnost modelu Bell-LaPadula platí:",
+    "answers": [
+      {
+        "body": "je považována za nebezpečnou a není doporučeno ji používat",
+        "right": false
+      },
+      {
+        "body": "zachovává integritu dat",
+        "right": false
+      },
+      {
+        "body": "účelem je ochránit duvěrnost citlivých dat",
+        "right": true
+      },
+      {
+        "body": "procesy nesmějí zapisovat data do nižší úrovně",
+        "right": true
+      },
+      {
+        "body": "procesy nesmějí číst data na vyšší úrovni",
+        "right": true
+      },
+      {
+        "body": "není komplementární k ss-vlastnosti modelu Bell-LaPadula",
+        "right": false
+      }
+    ]
   }
 ]
