@@ -688,7 +688,7 @@
     "answers": [
       {
         "body": "Hybridní karty.",
-        "right": false
+        "right": true
       },
       {
         "body": "Bezkontaktní karty.",
