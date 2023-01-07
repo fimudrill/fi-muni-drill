@@ -2186,7 +2186,7 @@
     "answers": [
       {
         "body": "K zajištění důvěrnosti",
-        "right": true
+        "right": false
       },
       {
         "body": "K zajištění integrity",
@@ -3994,7 +3994,7 @@
       },
       {
         "body": "Fyzická překážka kolem čipu karty ztěžující neautorizovaný přístup.",
-        "right": false
+        "right": true
       },
       {
         "body": "Odolnost proti útokům vyžadujícím fyzický přístup ke kartě.",
@@ -4738,6 +4738,87 @@
       },
       {
         "body": "není komplementární k ss-vlastnosti modelu Bell-LaPadula",
+        "right": false
+      }
+    ]
+  },
+  {
+    "name": "Matici přístupových práv: \
++---------------+-------------+-----------+-------------+ \
+| Subjekt       | C:\text.txt | D:\se.txt | D:\film.avi | \
++===============+=============+===========+=============+ \
+| Zriha         | {R}         | {}        | {R}         | \
++---------------+-------------+-----------+-------------+ \
+| Matyas        | {R}         | {}        | {R,W}       | \
++---------------+-------------+-----------+-------------+ \
+| Administrator | {R,W}       | {R}       | {R,W}       | \
++---------------+-------------+-----------+-------------+ \
+| Service       | {R}         | {}        | {R}         | \
++---------------+-------------+-----------+-------------+ \
+    můžeme do formy seznamu přístupových práv (ACL) přepsat následovně:",
+    "answers": [
+      {
+        "body": "C:\text.txt: [Zriha: {R}, Matyas: {R}, Administrator: {R,W}, Service: {R}] \
+D:\se.txt: [Administrator: {R}] \
+D:\film.avi: [Zriha: {R}, Matyas: {R,W}, Administrator: {R,W}, Service: {R}]",
+        "right": true
+      },
+      {
+        "body": "C:\text.txt: [Zriha: {W,X}, Matyas: {W,X}, Administrator: {X}, Service: {W,X}] \
+D:\se.txt: [Administrator: {W,X}] \
+D:\film.avi: [Zriha: {W,X}, Matyas: {X}, Administrator: {X}, Service: {W,X}]",
+        "right": false
+      },
+      {
+        "body": "C:\text.txt: [Zriha: {W}, Matyas: {W}, Administrator: {X}, Service: {W}] \
+D:\se.txt: [Administrator: {W}] \
+D:\film.avi: [Zriha: {W}, Matyas: {X}, Administrator: {X}, Service: {W}]",
+        "right": false
+      },
+      {
+        "body": "Zriha: [C:\text.txt: {R}, D:\film.avi: {R}] \
+Matyas: [C:\text.txt: {R}, D:\film.avi: {R,W}] \
+Administrator: [C:\text.txt: {R,W}, D:\se.txt: {R}, D:\film.avi: {R,W}] \
+Service: [C:\text.txt: {R}, D:\film.avi: {R}]",
+        "right": false
+      },
+      {
+        "body": "Zriha: [C:\text.txt: {W}, D:\film.avi: {W}] \
+Matyas: [C:\text.txt: {W}, D:\film.avi: {W,X}] \
+Administrator: [C:\text.txt: {W,X}, D:\se.txt: {W}, D:\film.avi: {W,X}] \
+Service: [C:\text.txt: {W}, D:\film.avi: {W}]",
+        "right": false
+      },
+      {
+        "body": "Zriha: [C:\text.txt: {W,X}, D:\film.avi: {W,X}] \
+Matyas: [C:\text.txt: {W,X}, D:\film.avi: {X}] \
+Administrator: [C:\text.txt: {X}, D:\se.txt: {W,X}, D:\film.avi: {X}] \
+Service: [C:\text.txt: {W,X}, D:\film.avi: {W,X}]",
+        "right": false
+      }
+    ]
+  },
+  {
+    "name": "Pro autentizaci v sítích GSM se používá:",
+    "answers": [
+      {
+        "body": "nestranná autentizace (odpověď - výzva)",
+        "right": false
+      },
+      {
+        "body": "jednostranná autentizace sítě",
+        "right": false
+      },
+      {
+        "body": "čipová karta",
+        "right": true
+      },
+      {
+        "body": "jednostranná autentizace zákazníka (subscriber)",
+        "right": true
+      },
+      {
+        "body": "jednostranná autentizace prodejce kuponu",
         "right": false
       }
     ]
