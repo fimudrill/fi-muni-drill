@@ -4743,30 +4743,30 @@
     ]
   },
   {
-    "name": "Matici přístupových práv: \n +---------------+-------------+-----------+-------------+ \n | Subjekt       | C:\text.txt | D:\se.txt | D:\film.avi | \n +===============+=============+===========+=============+ \n | Zriha         | {R}         | {}        | {R}         | \n +---------------+-------------+-----------+-------------+ \n | Matyas        | {R}         | {}        | {R,W}       | \n +---------------+-------------+-----------+-------------+ \n | Administrator | {R,W}       | {R}       | {R,W}       | \n +---------------+-------------+-----------+-------------+ \n | Service       | {R}         | {}        | {R}         | \n +---------------+-------------+-----------+-------------+ \n můžeme do formy seznamu přístupových práv (ACL) přepsat následovně:",
+    "name": "Matici přístupových práv: \n +---------------+-------------+-----------+-------------+ \n | Subjekt       | C:\\text.txt | D:\\se.txt | D:\\film.avi | \n +===============+=============+===========+=============+ \n | Zriha         | {R}         | {}        | {R}         | \n +---------------+-------------+-----------+-------------+ \n | Matyas        | {R}         | {}        | {R,W}       | \n +---------------+-------------+-----------+-------------+ \n | Administrator | {R,W}       | {R}       | {R,W}       | \n +---------------+-------------+-----------+-------------+ \n | Service       | {R}         | {}        | {R}         | \n +---------------+-------------+-----------+-------------+ \n můžeme do formy seznamu přístupových práv (ACL) přepsat následovně:",
     "answers": [
       {
-        "body": "C:\text.txt: [Zriha: {R}, Matyas: {R}, Administrator: {R,W}, Service: {R}] \n D:\se.txt: [Administrator: {R}] \n D:\film.avi: [Zriha: {R}, Matyas: {R,W}, Administrator: {R,W}, Service: {R}]",
+        "body": "C:\\text.txt: [Zriha: {R}, Matyas: {R}, Administrator: {R,W}, Service: {R}] \n D:\\se.txt: [Administrator: {R}] \n D:\\film.avi: [Zriha: {R}, Matyas: {R,W}, Administrator: {R,W}, Service: {R}]",
         "right": true
       },
       {
-        "body": "C:\text.txt: [Zriha: {W,X}, Matyas: {W,X}, Administrator: {X}, Service: {W,X}] \n D:\se.txt: [Administrator: {W,X}] \n D:\film.avi: [Zriha: {W,X}, Matyas: {X}, Administrator: {X}, Service: {W,X}]",
+        "body": "C:\\text.txt: [Zriha: {W,X}, Matyas: {W,X}, Administrator: {X}, Service: {W,X}] \n D:\\se.txt: [Administrator: {W,X}] \n D:\\film.avi: [Zriha: {W,X}, Matyas: {X}, Administrator: {X}, Service: {W,X}]",
         "right": false
       },
       {
-        "body": "C:\text.txt: [Zriha: {W}, Matyas: {W}, Administrator: {X}, Service: {W}] \n D:\se.txt: [Administrator: {W}] \n D:\film.avi: [Zriha: {W}, Matyas: {X}, Administrator: {X}, Service: {W}]",
+        "body": "C:\\text.txt: [Zriha: {W}, Matyas: {W}, Administrator: {X}, Service: {W}] \n D:\\se.txt: [Administrator: {W}] \n D:\\film.avi: [Zriha: {W}, Matyas: {X}, Administrator: {X}, Service: {W}]",
         "right": false
       },
       {
-        "body": "Zriha: [C:\text.txt: {R}, D:\film.avi: {R}] \n Matyas: [C:\text.txt: {R}, D:\film.avi: {R,W}] \n Administrator: [C:\text.txt: {R,W}, D:\se.txt: {R}, D:\film.avi: {R,W}] \n Service: [C:\text.txt: {R}, D:\film.avi: {R}]",
+        "body": "Zriha: [C:\\text.txt: {R}, D:\\film.avi: {R}] \n Matyas: [C:\\text.txt: {R}, D:\\film.avi: {R,W}] \n Administrator: [C:\\text.txt: {R,W}, D:\\se.txt: {R}, D:\\film.avi: {R,W}] \n Service: [C:\\text.txt: {R}, D:\\film.avi: {R}]",
         "right": false
       },
       {
-        "body": "Zriha: [C:\text.txt: {W}, D:\film.avi: {W}] \n Matyas: [C:\text.txt: {W}, D:\film.avi: {W,X}] \n Administrator: [C:\text.txt: {W,X}, D:\se.txt: {W}, D:\film.avi: {W,X}] \n Service: [C:\text.txt: {W}, D:\film.avi: {W}]",
+        "body": "Zriha: [C:\\text.txt: {W}, D:\\film.avi: {W}] \n Matyas: [C:\\text.txt: {W}, D:\\film.avi: {W,X}] \n Administrator: [C:\\text.txt: {W,X}, D:\\se.txt: {W}, D:\\film.avi: {W,X}] \n Service: [C:\\text.txt: {W}, D:\\film.avi: {W}]",
         "right": false
       },
       {
-        "body": "Zriha: [C:\text.txt: {W,X}, D:\film.avi: {W,X}] \n Matyas: [C:\text.txt: {W,X}, D:\film.avi: {X}] \n Administrator: [C:\text.txt: {X}, D:\se.txt: {W,X}, D:\film.avi: {X}] \n Service: [C:\text.txt: {W,X}, D:\film.avi: {W,X}]",
+        "body": "Zriha: [C:\\text.txt: {W,X}, D:\\film.avi: {W,X}] \n Matyas: [C:\\text.txt: {W,X}, D:\\film.avi: {X}] \n Administrator: [C:\\text.txt: {X}, D:\\se.txt: {W,X}, D:\\film.avi: {X}] \n Service: [C:\\text.txt: {W,X}, D:\\film.avi: {W,X}]",
         "right": false
       }
     ]
